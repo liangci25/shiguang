@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>聊天</title>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/conversation.css">
+</head>
+<body>
+<div class="phone">
+  <main class="chat">
+    <header class="chat-head">
+      <a class="head-back" href="index.html">‹</a>
+      <div class="chat-avatar" id="chatAvatar"></div>
+      <div class="chat-title">
+        <div class="chat-name" id="chatName">…</div>
+        <div class="chat-sub" id="chatSub"></div>
+      </div>
+      <button class="chat-more" id="moreBtn" title="更多">⋯</button>
+      <div class="dropdown" id="moreMenu"></div>
+    </header>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="chat-foot" id="chatFoot">
+      <button class="ext-btn" id="extBtn" title="更多功能">＋</button>
+      <textarea class="msg-input" id="msgInput" rows="1" placeholder="发消息…（Enter 发送）"></textarea>
+      <button class="send-btn" id="sendBtn" disabled>发送</button>
+    </div>
+  </main>
+</div>
+
+<!-- 模拟视频通话层 -->
+<div class="vcall" id="vcall" style="display:none">
+  <div class="vcall-peer" id="vcallPeer"></div>
+  <div class="vcall-state" id="vcallState">正在呼叫…</div>
+  <div class="vcall-time" id="vcallTime"></div>
+  <button class="vcall-hangup" id="vcallHangup" title="挂断">挂断</button>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toast"></div>
+
+<script src="../js/common.js"></script>
+<script src="../js/conversation.js"></script>
+</body>
+</html>

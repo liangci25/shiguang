@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>新建会话</title>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/new.css">
+</head>
+<body>
+<div class="phone">
+  <header class="page-head">
+    <a class="head-back" href="index.html">‹</a>
+    <div class="head-title">新建会话</div>
+  </header>
+  <main class="page-body new-picker">
+    <button class="new-opt" id="newCharBtn">
+      <div class="new-opt-icon">👤</div>
+      <div class="new-opt-title">新建角色</div>
+      <div class="new-opt-desc">创建一个会用词库跟你聊天的角色</div>
+    </button>
+    <button class="new-opt" id="newGroupBtn">
+      <div class="new-opt-icon">👥</div>
+      <div class="new-opt-title">新建群聊</div>
+      <div class="new-opt-desc">拉几个角色进群，一起热闹聊天</div>
+    </button>
+  </main>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toast"></div>
+
+<script src="../js/common.js"></script>
+<script src="../js/new.js"></script>
+</body>
+</html>

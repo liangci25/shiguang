@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>加好友</title>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/new-char.css">
+</head>
+<body>
+<div class="phone">
+  <header class="page-head">
+    <div class="head-title">加好友</div>
+    <button class="head-close" id="nc-close" title="关闭">×</button>
+  </header>
+  <main class="page-body char-form">
+    <!-- 左右分栏：左侧头像预览，右侧表单 -->
+    <div class="char-form-row">
+      <div class="char-left">
+        <div class="avatar avatar-big" id="nc-avatar" title="点击设置头像"></div>
+        <div class="avatar-hint">点击头像：拍照 / 本地图片上传</div>
+      </div>
+      <div class="char-right">
+        <div class="field">
+          <label>昵称 <span class="required">*</span></label>
+          <input type="text" id="nc-name" maxlength="12" placeholder="给 TA 起个昵称">
+        </div>
+        <div class="field">
+          <label>图片 URL（粘贴实时预览头像）</label>
+          <input type="text" id="nc-url" placeholder="https://… 图片链接">
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-block" id="nc-save">添加梦角</button>
+  </main>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toast"></div>
+
+<script src="../js/common.js"></script>
+<script src="../js/new-char.js"></script>
+</body>
+</html>

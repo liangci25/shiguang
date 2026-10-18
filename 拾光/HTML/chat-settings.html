@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>聊天设置</title>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/chat-settings.css">
+</head>
+<body>
+<div class="phone">
+  <header class="page-head">
+    <a class="head-back" href="javascript:history.back()">‹</a>
+    <div class="head-title">聊天设置</div>
+  </header>
+  <main class="page-body">
+    <!-- 消息回复频率 -->
+    <div class="cs-section">
+      <div class="cs-section-title">消息回复频率</div>
+      <div class="cs-row">
+        <div class="cs-row-head"><span>最短回复时间</span><span class="cs-val" id="cs-min-val">0 分钟</span></div>
+        <input type="range" id="cs-min" min="0" max="2" step="0.1" value="0">
+      </div>
+      <div class="cs-row">
+        <div class="cs-row-head"><span>最长回复时间</span><span class="cs-val" id="cs-max-val">2 分钟</span></div>
+        <input type="range" id="cs-max" min="2" max="20" step="0.1" value="2">
+      </div>
+    </div>
+    <!-- 主动发消息 -->
+    <div class="cs-section">
+      <div class="cs-row">
+        <div class="cs-row-head"><span>主动发消息</span><span class="cs-switch" id="cs-proactive"></span></div>
+      </div>
+      <div class="cs-row" id="cs-proactive-row">
+        <div class="cs-row-head"><span>主动发消息间隔</span></div>
+        <div class="cs-interval">
+          <input type="number" id="cs-proactive-min" min="1" max="120" step="1" value="2">
+          <span>分钟</span>
+        </div>
+      </div>
+    </div>
+    <!-- 气泡自定义 -->
+    <div class="cs-section">
+      <div class="cs-section-title">气泡自定义</div>
+      <div class="cs-row" style="flex-direction:column;align-items:stretch;gap:8px">
+        <input type="text" id="cs-bubble" placeholder="粘贴气泡 CSS 链接（https://…）" style="width:100%;border:1px solid #dcdcdc;border-radius:6px;padding:9px 12px;font-size:14px;outline:none">
+        <div class="cs-preview">
+          <div class="bubble role-b">实时预览：对方气泡</div>
+          <div class="bubble mine-b">实时预览：我的气泡</div>
+        </div>
+        <div style="font-size:11px;color:#b0b0b0">粘贴链接后自动实时预览，保存后聊天页生效</div>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-block" id="cs-save">保存设置</button>
+  </main>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toast"></div>
+
+<script src="../js/common.js"></script>
+<script src="../js/chat-settings.js"></script>
+</body>
+</html>

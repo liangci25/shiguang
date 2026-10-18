@@ -1,0 +1,14 @@
+/* 加好友页（角色资料填写页）（css/new-char.css） */
+.char-form{ padding:24px 20px; }
+/* 左右分栏 */
+.char-form-row{ display:flex; gap:20px; align-items:flex-start; }
+.char-left{ flex:none; width:96px; display:flex; flex-direction:column; align-items:center; gap:10px; }
+.char-left .avatar{ width:88px; height:88px; font-size:34px; cursor:pointer; }
+.avatar-hint{ font-size:11px; color:#b0b0b0; text-align:center; line-height:1.6; }
+.char-right{ flex:1; min-width:0; }
+/* 右上角红色叉号 */
+.head-close{
+  position:absolute; right:8px; top:50%; transform:translateY(-50%);
+  border:none; background:none; color:var(--danger);
+  font-size:26px; cursor:pointer; padding:2px 10px; line-height:1;
+}

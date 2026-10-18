@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>角色设置</title>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/chat-info.css">
+</head>
+<body>
+<div class="phone">
+  <header class="page-head">
+    <a class="head-back" href="index.html">‹</a>
+    <div class="head-title">角色设置</div>
+  </header>
+  <main class="page-body">
+    <!-- 顶部资料卡 -->
+    <div class="ci-profile">
+      <div class="avatar avatar-big" id="ci-avatar"></div>
+      <div class="ci-profile-name" id="ci-name">…</div>
+      <div class="ci-profile-bio" id="ci-bio"></div>
+    </div>
+    <!-- 功能列表 -->
+    <div class="ci-list">
+      <div class="ci-row" data-act="settings">
+        <span class="ci-label">聊天设置</span>
+        <span class="ci-arrow">›</span>
+      </div>
+      <div class="ci-row" data-act="pin">
+        <span class="ci-label">置顶聊天</span>
+        <span class="ci-switch" id="ci-pin"></span>
+      </div>
+      <div class="ci-row" data-act="bg">
+        <span class="ci-label">聊天背景</span>
+        <span class="ci-value" id="ci-bgval">默认</span>
+        <span class="ci-arrow">›</span>
+      </div>
+      <div class="ci-row" data-act="search">
+        <span class="ci-label">查找聊天记录</span>
+        <span class="ci-arrow">›</span>
+      </div>
+      <div class="ci-row danger" data-act="clear">
+        <span class="ci-label">清空聊天记录</span>
+        <span class="ci-arrow">›</span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toast"></div>
+
+<script src="../js/common.js"></script>
+<script src="../js/chat-info.js"></script>
+</body>
+</html>
